@@ -17,6 +17,7 @@ function playOnClick() {
 
 	setTimeout(stopOnClick,temposortido)
 	console.log(temposortido)
+	globalObjects.btnPlay.style.visibility = "visible";
 }
 
 function calculate() {
@@ -35,5 +36,5 @@ function stopOnClick() {
     globalObjects.btnStop.style.visibility = "hidden";
     var box = calculate();
     var boxGanhador = document.getElementById("opt".concat(box))
-    document.getElementById("msgGanhador").innerHTML = "Então vamos no ".concat(boxGanhador.innerHTML);
+    //document.getElementById("msgGanhador").innerHTML = "Então vamos no ".concat(boxGanhador.innerHTML);
 }
